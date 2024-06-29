@@ -1,5 +1,9 @@
+html {
+  font-family: sans-serif;
+}
+
 body {
-  background-color: #ffffaf;
+  background: #ffffaf;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -10,7 +14,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #1bacbf;
+    background: #1bacbf;
     color: #FFFFFF;
   }
 }
@@ -33,15 +37,51 @@ ul {
   display: flex;
   justify-content: center;
   padding: 0;
+  list-style: none;
 }
 
 li {
-  list-style: none;
   margin: 0 10px;
 }
 
-/* スマホ対応 */
-@media (max-width: 600px) {
+a {
+  color: #999;
+  text-decoration: none;
+}
+
+.footer {
+  padding: 2rem;
+  font-size: 15px;
+  color: #999;
+  background: #fff;
+  border-top: 1px solid #e5e7eb;
+}
+
+.footer a:hover {
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .md-flex {
+    display: flex;
+  }
+
+  .md-flex li + li {
+    margin-left: 16px;
+  }
+
+  /* スマホ用コンテンツを非表示 */
+  .mobile-content {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
   .main {
     padding: 10px;
   }
@@ -52,5 +92,10 @@ li {
 
   li {
     margin: 5px 0;
+  }
+
+  /* PC用コンテンツを非表示 */
+  .pc-content {
+    display: none;
   }
 }
