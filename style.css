@@ -1,0 +1,25 @@
+body {
+  background-color: #ffffaf;
+}
+
+@media (prefers-color-scheme: dark) {
+body {
+  background-color: #1bacbf;
+    color:#FFFFFF;
+}
+}
+
+<style>
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+}
+
+li:nth-child(2) {
+  margin: 0 10px;
+}
+</style>
