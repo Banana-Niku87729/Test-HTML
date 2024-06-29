@@ -25,10 +25,13 @@
     }
 
     .main {
-      width: 100%;
+      width: 90%;
       max-width: 800px;
       padding: 20px;
       box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .center {
@@ -44,6 +47,21 @@
     li {
       list-style: none;
       margin: 0 10px;
+    }
+
+    /* スマホ対応 */
+    @media (max-width: 600px) {
+      .main {
+        padding: 10px;
+      }
+
+      ul {
+        flex-direction: column;
+      }
+
+      li {
+        margin: 5px 0;
+      }
     }
   </style>
 </head>
