@@ -1,25 +1,41 @@
 body {
   background-color: #ffffaf;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
 }
 
 @media (prefers-color-scheme: dark) {
-body {
-  background-color: #1bacbf;
-    color:#FFFFFF;
-}
+  body {
+    background-color: #1bacbf;
+    color: #FFFFFF;
+  }
 }
 
-<style>
+.main {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
 ul {
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 
 li {
   list-style: none;
-}
-
-li:nth-child(2) {
   margin: 0 10px;
 }
-</style>
