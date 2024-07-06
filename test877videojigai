@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>SAMPLEHTML</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="sample.js"></script>
+  <link rel="icon" href="favicon.ico">
+   <style>
+    ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    li:nth-child(2) {
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+<video controls src="Screen recording 2024-07-06 15.58.24.webm"></video>
+</div>
+  <div class="footer">
+  </div>
+</body>
